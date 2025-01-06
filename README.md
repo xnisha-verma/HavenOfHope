@@ -29,7 +29,8 @@ Frontend: HTML, CSS, JavaScript
 
 📸 Screenshots
 Homepage
-![Alt Text](img\homeview.png "Homepage")
+![Homepage Screenshot]( img\homeview.png "Homepage of HavenOfHope")
+
 
 
 Core Objectives
