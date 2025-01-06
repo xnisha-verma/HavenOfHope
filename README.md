@@ -27,11 +27,11 @@ Frontend: HTML, CSS, JavaScript
 
 //Project is in progress for backend
 
-📸 Screenshots
+<!-- 📸 Screenshots
 Homepage
 ![Homepage Screenshot]( img\homeview.png "Homepage of HavenOfHope")
 
 
 
 Core Objectives
-![Alt Text](img\objectives.png "Core objectives")
+![Alt Text](img\objectives.png "Core objectives") -->
