@@ -206,7 +206,6 @@ section {
 
 /* Footer */
 footer {
-    /* background: #2c3e50; */
     background: #000000;
     color: #ecf0f1;
     padding: 20px 10px;
@@ -246,9 +245,8 @@ a:hover {
     color: #f39c12;
 }
 
-.footer-social a {
-    font-size: 1.5em;
-    margin: 0 10px;
+.footer-social p {
+    margin: 0 2px;
     color: #ecf0f1;
     transition: color 0.3s;
 }
@@ -260,4 +258,101 @@ a:hover {
 p {
     margin: 10px 0 0;
     font-size: 0.9em;
+}
+/* Programs Section */
+#programs-carousel {
+    padding: 50px 20px;
+    background-color: #4a696f9f;
+    text-align: center;
+}
+
+#programs-carousel h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #272727;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+#programs-carousel h3{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Carousel Container */
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.carousel {
+    display: flex;
+    gap: 20px;
+    animation: slide-loop 15s linear infinite;
+}
+
+.program-card {
+    flex: 0 0 30%;
+    min-width: 30%;
+    height: 350px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.program-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+/* Card Content with Slide-Up Effect */
+.card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-content h3 {
+    font-size: 3rem;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.card-content p {
+    font-size: 1.3rem;
+}
+
+/* Hover Effect for Slide-Up */
+.program-card:hover .card-content {
+    transform: translateY(0);
+}
+
+/* Carousel Animation */
+@keyframes slide-loop {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Infinite Loop Logic */
+.carousel-container .carousel {
+    width: calc(30% * 5 + 20px * 5);
 }

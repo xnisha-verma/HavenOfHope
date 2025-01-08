@@ -1,0 +1,148 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Programs Section */
+.programs-introduction {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #4a696f9f;
+}
+
+.programs-introduction h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #0d0b18d5;
+}
+
+.programs-introduction p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #fffdfd;
+}
+
+/* Program Cards */
+.programs-detail {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.program-card {
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 45%;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+    transform: scale(1.05);
+}
+
+.program-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-right: 2px solid #ddd;
+}
+
+.program-info {
+    padding: 20px;
+    flex: 1;
+}
+
+.program-info h3 {
+    font-size: 1.5rem;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.program-info p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.cta-btn {
+    background-color: #df560cda;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #381005c4;
+}
+/* Footer */
+footer {
+    background: #000000;
+    color: #ecf0f1;
+    padding: 20px 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.footer-logo img {
+    width: 40px;
+    margin-bottom: 5px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li, .footer-contact p {
+    margin: 5px 0;
+}
+
+a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #f39c12;
+}
+
+.footer-social p {
+    margin: 0 2px;
+    color: #ecf0f1;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: #f39c12;
+}
+
+p {
+    margin: 10px 0 0;
+    font-size: 0.9em;
+}
