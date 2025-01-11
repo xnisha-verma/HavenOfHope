@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate to HavenOfHope</title>
+    <link rel="stylesheet" href="money.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>HavenOfHope</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="donate-intro">
+            <h2>Make a Difference Today</h2>
+            <p>Your generosity can help us provide better opportunities and resources for children in need. Donate now!</p>
+        </section>
+
+        <section class="donate-form-section">
+            <h3>Donate Now</h3>
+            <form action="#" method="POST" class="donate-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="program">AAKAR - The First Step</label>
+                <select id="program" name="program" required>
+                    <option value="aakar">AAKAR - The First Step</option>
+                    <option value="ahar">AHAR APURTI</option>
+                    <option value="avsar">AVSAR - A Chance</option>
+                    <option value="lakshya">Lakshya</option>
+                    <option value="uphaar">UPHAAR - Gift a Smile</option>
+                </select>
+
+                <label for="amount">Donation Amount:</label>
+                <input type="money" placeholder="Enter your amount" required>
+                <label for="custom-amount" id="custom-amount-label" style="display: none;">Enter Custom Amount:</label>
+                <input type="number" id="custom-amount" name="custom_amount" placeholder="Enter amount" style="display: none;">
+
+                <label for="message">Message (Optional):</label>
+                <textarea id="message" name="message" rows="4" placeholder="Leave a message"></textarea>
+
+                <button type="submit" class="donate-btn">Donate</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HavenOfHope - Empowering Lives. All rights reserved.</p>
+    </footer>
+
+    <!-- <script>
+        // Show custom amount input if "Custom Amount" is selected
+        const amountSelect = document.getElementById('amount');
+        const customAmountLabel = document.getElementById('custom-amount-label');
+        const customAmountInput = document.getElementById('custom-amount');
+
+        amountSelect.addEventListener('change', () => {
+            if (amountSelect.value === 'custom') {
+                customAmountLabel.style.display = 'block';
+                customAmountInput.style.display = 'block';
+            } else {
+                customAmountLabel.style.display = 'none';
+                customAmountInput.style.display = 'none';
+            }
+        });
+    </script> -->
+</body>
+</html>

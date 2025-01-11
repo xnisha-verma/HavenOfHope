@@ -42,7 +42,7 @@ body {
     overflow: hidden;
     width: 45%;
     margin: 10px;
-    transition: transform 0.3s ease;
+    transition: transform 0.7s ease;
 }
 
 .program-card:hover {
